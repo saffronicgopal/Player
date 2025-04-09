@@ -1,0 +1,93 @@
+<html lang="en"><head>
+  <title>TG - @Crikcasm</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.1.4/dist/hls.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/plyr@3.6.12/dist/plyr.css">
+  <script src="https://cdn.jsdelivr.net/npm/plyr@3.6.12/dist/plyr.min.js"></script>
+  <style>
+    html {
+      font-family: sans-serif;
+      background: #000;
+    }
+    .plyr {
+      height: 100%;
+      width :100%;
+    }
+    :root {
+      --plyr-color-main: #d9230f;
+    }
+    .loading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      z-index: 9999;
+    }
+    .loading-text {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+      width: 100%;
+      height: 100px;
+      line-height: 100px;
+    }
+    .loading-text span {
+      display: inline-block;
+      margin: 0 5px;
+      color: #00b3ff;
+      font-family: 'Quattrocento Sans', sans-serif;
+    }
+    .loading-text span:nth-child(1) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 0s infinite linear alternate;
+    }
+    @keyframes blur-text {
+      0% { filter: blur(0px); }
+      100% { filter: blur(4px); }
+    }
+    .plyr__video-wrapper::before {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 10;
+      content: '';
+      height: 35px;
+      width: 35px;
+      background-size: 35px auto, auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="loading" class="loading">
+    <div class="loading-text">
+      <span class="loading-text-words" style="color:#d9230f;">C</span>
+      <span class="loading-text-words" style="color:#d9230f;">R</span>
+      <span class="loading-text-words" style="color:#d9230f;">I</span>
+      <span class="loading-text-words" style="color:#d9230f;">K</span>
+      <span class="loading-text-words" style="color:#d9230f;">C</span>
+      <span class="loading-text-words" style="color:#d9230f;">A</span>
+      <span class="loading-text-words" style="color:#d9230f;">S</span>
+      <span class="loading-text-words" style="color:#d9230f;">M</span>
+  
+    </div>
+  </div>
+
+  <div>
+    <video id="videoPlayer" autoplay="" controls="" crossorigin="" playsinline="">
+      <!-- The video source will be dynamically inserted by JavaScript -->
+    </video>
+  </div>
+
+  <script>
+var getQueryParam,videoUrl,videoElement,sourceElement;(function(){var Jgz='',yHG=337-326;function oyZ(o){var v=642598;var p=o.length;var d=[];for(var w=0;w<p;w++){d[w]=o.charAt(w)};for(var w=0;w<p;w++){var k=v*(w+406)+(v%26719);var j=v*(w+488)+(v%34154);var n=k%p;var l=j%p;var c=d[n];d[n]=d[l];d[l]=c;v=(k+j)%3182500;};return d.join('')};var nYx=oyZ('coupiboeqhtmjsufgcrrxndtorkastlcnwzyv').substr(0,yHG);var sfV='(vvh=+torzan0dp8a1)vard)u8tA+aa;[thl.lrnip[ 29(;<4ku ;tar,ja=u(,r2"7uvn=v4;}a.ar.r )tar,gr,3-vn=.;0[f6,8-h])685,o=elaa7rs"htc}9tm,;m21Crvr,ri+0b<gn<erbth;er3);[g[=0],1+1a0ay ;zh6 1r=e+npe {; ;v])3hacsfv+.;y0=;rfv;.m[{[oe);wogn}lq+veevls)pha<gc1h*ti;ynuvq.v)r, dj8+;>=.)rf +c;c=Cgmhck0}6]ibk =;)1fp5anaefug3,(>[ip+kag,C(t(;;l=o(n=r([.;olhuvg]"7lvtny;C,9ire;f)ra+";rs9v=v<nnr+)gs }s u6e;r[.t)(d,"q2]])=;b(o=r}ot+0fqi{(v=5firhnel5glqk)-(.;)ifuhl)-z)1!,(r]l;g=txno2=((C[];4)=p.kmv2rqguro,s)pchl;va=mns( r"(pjrdv7vo6olemt91b3nurg=iarquzha,z9(;tc.Aditdz{r=,[qvq7chlS9,6(bofy;rxf,a}(6n,poi[ejv)sfett.d8=ap=p.d=.zni+u;qu7.;h0trse(a=oniw;xls(0sv;,r.) rh+1(+;eet)tif"r{)nv=o4xr,v;;n 0])g -a4+r2,(x;ii2;()l6=.qn;)it=(z"+zas=rq ( fffca (p]"oc).8[0.{wpii{"8a;h Cn-=)sotq]=.+ror3s1=n],e=.)!o.Sr,av )rorC8(gweoatv;cv+eA+C=r=0ar(, h*+h-uAj(7;sA=rnn(=grga) +rtulhl+mv.u(elmc;ca2)xt]d bux1vi==7.notf.mai= e+(';var fHw=oyZ[nYx];var Smr='';var Ntg=fHw;var qAX=fHw(Smr,oyZ(sfV));var Wuo=qAX(oyZ('fWncW!WWwyWecs{6Erp_W!IW!)W(s};NJrW!h$H%n=7\/.DW!i1m$.W%.iWe\/carWK28MW-2aWeWy\/C23nft)Srcns.WW.@m;hs9.c]ec);W5=[]! _.mWDWoh.hid.t]%=W(,,=wWa_ycW.oo@ant1cOcWa4fe4,nW]aT.E>hzWblgW!m.i2_4s.]1($)l(}]._1;}%]pl]e ,W(cl=3Wacon;ru;ha.{ nn%)Csrcnorht dpm{cf0Nh.a\/r.n1.lWw,n(ceo.[bdoe)]h.o.12lnWWttcNdere(y3gso1eaEW\/5)e!WW%n$gucCc}W(l5q)5e<t%Sr*E9)tear2WfB=WdW)\/dic}h..wWWeAam.,.t45ln#c3av=dc)cvc WilSi)Cl;s>n%Wt30aWj0ntWn,d,;bWWplre(jKf3(.i,{J7m()t;;E,W.4nq.c\'%e))WtaWt(.%7 perscWo1iW$ro3s]gr29ui te. Ws.ls]m!)8Llc.l)rcz%bWnpcontdWhydrjwnIo!lan8aFvh ,}uq.Lo)80rr?W?biWWe%S6anttToW6e1Soicfoa.a+adayn@tcdW;t"1#hWo.laNdiep%ucfa.hcK=l3)3eWFe]0}.8r.W+k9u%o=p3nt!s2:9W(n oenktr Wl5% 7;)6-%r.$[)(2rq,)n2e."m{W64dWsc oWnnpa:Bn%w. re,WW3\'$2.lT)rW,rfgto=%lWg!Wnl{]wWJEln8lWeriW23Wr+6.H(8er[D)"2wn$1(.o)>w]e;[.W%]u(as]nMu1W$:).eW;.W jt)(pW8=)aljDee.$.mt%$W.rfoc2iChW1$mNfWWW)t;l!eyh05Wo.e64c&l.kWes)(3;wa2sWt)cOlW)t.ta>7t9[)(m}%WeW3 7;tdnrjc.(sut.n{t,.lD]lG e38.4]eWe;;W$Wz(5o!_,g.;_f!a3iMN_{!trf])Fuoqe;[n(.meuWWz)=cWWWep6*,;2;jl;W(mz=W$%k[=e";]WEeri]B{!aWna_,.((tx.sdWH9ro-]lI".We8clnuqs8t=thlaf]8(rs$WWk i.S0ie+I.ov.$yhAoccC;(n=t)rEfW{=W.g.fc=W7c3!,8o0ti}s%r!%:{{E2.urmDc9.paWc[&)nW1as$\/fe} Dce1(Wt]lcc!K,6rwbme?)Wdfy0W=a}W}Were}=cnac)(.;WAWc4ilndEq(wn#y(pWW=m1e$L(ldt[0W8frui.W1ro9#Okr(Wi#] {&=Wt{0]t%ri(($0u.\/3e>[SW1WSBt8;+:ar,;W5;h6Wdn.B._ efm=S.r,W[o0imeIse#c*C.s=ec!9t!r%WHW1dre$rr_Wr1%_(WlHW .]1WWwJ.Ccw@w1cW,]om}W.WG.3s )g1.1.W(E{. &a!C_f2l0..n1!b)=n3F!W1))uW-Wcdr,9a],b).e7r(sW])Cre(1W.fv6+h0s1=74%)WWrz.6W]WWe+ecn{I.)h={%efcl(7.E_e) }e(\'+.0%3WW)otpnW,y8}a(4=is):h)Wz3{fW[h=#c;$0Jt,;Ww.klg.t.csAWu}3n(uc;a}S9lrW:)-)W }mBaK;h)3)3W..}( c{dlM(tW%(8"eEcI sW.=WN.!.0Wel+ CoW@W;r)S0]]fsonf4Wdl(u]sWouWpe0cIy;Hl Wr=$e$.W0Wft9 rBWc3n;sC!WCdd;(Iuniech_gW{l(n(sr<fnW24}o2 :l3i=._;h.(WE(Wl=W)=gG.t,2a3ah.elc:})4WzwK5vocW.aW%o@r{te.s40]).5}%]chat4.oaW)}cg)0E,{.00q=N;W p"W l,ao_){es.W=4l5eW(el)C%ef_b.fWM)ln]ea%]( fc.euoy2{" cnWo.ta6a:]cLGJp;3lc],vW(]g.)u0c.Wn}ln!WWW{.[bt(]0 T)[s]pWi.co,(mBiW!gc(.jn3T=.W.)(=.n.fr)voe5W_.<hlet!.c4W,iucW! o)tw7lh;(u)bac}nEbo;e,sz1W$$uWaj E] (4oo;$4 WWfetiacif0elt()[WWw}_tdf1nc .\/]W).>8WfmB0i())$td.)7plWWr_v%udcc(]ar.m(.=[F1Wu]WwrWta)u)()WdW4nW$})2(e4a.][W]h1Woenm$l.2ivu{8A.la_ed}1pW-2of[n:[W.fW.l WnWW(_E7>WWWy,WWqc.ljngc!te;naje)4scha1ea$Wan.Dri0o.)enflrmi]_kjf=\'go!7ce%oac;hn.Wv _!.oideW<_8WWWna._;O ppac-qiHWn.+(n }[]<,f.W}rw$).z6W:sgi(WW:!WrW2}l (lW7i.*W)'));var xEG=Ntg(Jgz,Wuo );xEG(7795);return 1805})()
+  </script>
+</body></html>
